@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
     <div id="app">
         <div id="header">
@@ -16,13 +18,18 @@
                 <span>settings</span>
             </button>
         </div>
-     
         <div id="settings-panel" style="display: none;">
+            <div>
+                <h2>Help?</h2>
+                <p><a href="https://github.com/betalgo/Mergy/blob/main/Readme.md" target="_blank">Visit</a> our one page
+                    help page if you are new.</p>
+            </div>
             <div id="github-auth">
                 <h2>GitHub Authentication</h2>
                 <input type="password" id="github-token" placeholder="Enter GitHub Personal Access Token">
-                <p> <a href="https://github.com/settings/tokens?type=beta" target="_blank">Create a new GitHub Personal Access Token</a> with read-only scope.</p>
-                <button id="save-token" type="button"  class="primary-button">Save Token</button>
+                <p> <a href="https://github.com/settings/tokens?type=beta" target="_blank">Create a new GitHub Personal
+                        Access Token</a> with read-only scope.</p>
+                <button id="save-token" type="button" class="primary-button">Save Token</button>
             </div>
             <div id="mergyignore-editor">
                 <h2>Mergy Ignore Rules</h2>
@@ -42,7 +49,7 @@
                     <h3>Exclude file extensions:</h3>
                     <textarea id="exclude-extension"></textarea>
                 </div>
-                <button id="save-rules"  class="primary-button" >Save Rules</button>
+                <button id="save-rules" class="primary-button">Save Rules</button>
             </div>
         </div>
         <div id="main-content">
@@ -76,11 +83,15 @@
                 <tbody id="file-table-body"></tbody>
             </table>
         </div>
-  
         <div id="footer">
-            Developed by <a href="https://www.betalgo.com/" target="_blank">Betalgo</a> with ❤️ for <a href="https://www.anthropic.com/" target="_blank">Anthropic</a>'s <a href="https://claude.ai/" target="_blank">Claude</a>
+            Developed by <a href="https://betalgo.com/" target="_blank">Betalgo</a> with ❤️ for <a
+                href="https://www.anthropic.com/" target="_blank">Anthropic</a>'s <a href="https://claude.ai/"
+                target="_blank">Claude</a>
+            <br>
+            Free to use and open source: <a href="https://github.com/betalgo/Mergy" target="_blank">GitHub</a>
         </div>
     </div>
     <script src="popup.js"></script>
 </body>
+
 </html>

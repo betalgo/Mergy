@@ -1,6 +1,27 @@
 # Mergy
 
-Mergy is a Browser extension designed to easily aggregate GitHub repository contents into a single text file, perfect for use with Anthropic's Claude Projects feature, enabling seamless integration of entire codebases for AI-assisted development and analysis.
+Mergy is a browser extension that combines and optimizes GitHub repository contents into a single text file. It's designed to work with Claude, an AI assistant.
+
+## Links:
+- [Youtube video](https://www.youtube.com/watch?v=4gbvmFCAN0E) 
+- [Blog Post](https://blog.kayhantolga.com/mergy-a-quick-tool-for-claude-projects)
+- [Mergy Client App](https://github.com/betalgo/MergyClient)
+
+## What does Mergy do?
+
+1. When you visit a GitHub repository, Mergy can fetch all the files.
+2. It combines these files into one text document.
+3. The extension optimizes the content to use fewer tokens, which is important for AI processing.
+4. You can then upload this combined file to [Claude Projects](https://claude.ai/projects).
+
+## How can developers use it?
+
+- Visit a small to medium-sized library on GitHub.
+- Use Mergy to create a single file containing all the code.
+- Upload this file to [Claude Projects](https://claude.ai/projects).
+- Now you can ask Claude questions about the entire codebase or request it to generate code based on the library.
+
+This tool helps developers quickly give Claude context about an entire codebase, making it easier to work with AI on programming tasks.
 
 ## Features
 
@@ -12,19 +33,19 @@ Mergy is a Browser extension designed to easily aggregate GitHub repository cont
 
 ## Installation
 
-1. Download the extension from the Browser Web Store (link to be added once published)
-2. Click on "Add to Browser" to install the extension
-3. Once installed, you'll see the Mergy icon in your Chrome toolbar
+1. Download the extension from your browser's extension store (links to be added once published)
+2. Click on "Add to [Your Browser Name]" to install the extension
+3. Once installed, you'll see the Mergy icon in your browser toolbar
 
 ## Usage
 
 1. Navigate to any GitHub repository page
-2. Click on the Mergy icon in your Chrome toolbar
+2. Click on the Mergy icon in your browser toolbar
 3. Set your GitHub Personal Access Token in the settings (required for API access)
 4. Configure Mergy Ignore rules if desired (optional)
 5. Click "Start Fetching Files" to retrieve the repository contents
 6. Select the files you want to include in the combined file
-7. Click "Download Combined Files" to generate and download the aggregated text file
+7. Click "Combine and Download" to generate and download the aggregated text file
 
 ## Configuration
 
@@ -32,13 +53,13 @@ Mergy is a Browser extension designed to easily aggregate GitHub repository cont
 
 To use this extension, you need to provide a GitHub Personal Access Token:
 
-1. Go to GitHub Settings > Developer settings > Personal access tokens
-2. Generate a new read-only token with 'repo' scope
+1. Go to GitHub Settings > Developer settings > [Personal access tokens](https://github.com/settings/tokens?type=beta)
+2. Generate a new token with 'repo' scope
 3. Copy the token and paste it into the extension's settings
 
-### MergyIgnore Rules
+### Mergy Ignore Rules
 
-You can customize which files to include or exclude using MergyIgnore rules:
+You can customize which files to include or exclude using Mergy Ignore rules:
 
 - Include if path contains: Specify paths to include
 - Include file extensions: List file extensions to include
@@ -63,4 +84,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Developed by Betalgo with ❤️ for Anthropic's Claude
+Developed by [Betalgo](https://betalgo.com/) with ❤️ for [Anthropic](https://www.anthropic.com/)'s [Claude](https://claude.ai/)
